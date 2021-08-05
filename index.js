@@ -1,6 +1,9 @@
-n//Define request response in root URL
+//Define request response in root URL
+var express = require("express")
+var app = express()
+
 app.get("/",function(req,res){
-    res.send("welcome to my app")
+    res.send("welcome")
 })
 
 app.listen(9090,function(){
